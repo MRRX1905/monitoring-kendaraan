@@ -1,0 +1,29 @@
+{
+  "source": "demo/moving_traffic.mp4",
+  "model_path": "tracking/yolov8n.pt",
+  "conf": 0.25,
+  "iou": 0.45,
+  "imgsz": 320,
+  "device": "cpu",
+  "classes": [2, 3, 5, 7],
+  "tracker": "bytetrack.yaml",
+  "max_display_width": 640,
+  "reconnect_delay": 2.0,
+  "line": {
+    "id": 1,
+    "p1": [0.50, 0.05],
+    "p2": [0.50, 0.95],
+    "label": "Garis Monitoring Vertikal"
+  },
+  "db": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "database": "parkir_malikussaleh"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 5055
+  }
+}
